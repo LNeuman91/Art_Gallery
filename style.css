@@ -1,0 +1,115 @@
+.Art {
+    text-align: center;
+    font: bold 3vw Arial, sans-serif; /* Combines font-size and font-family */
+    color: whitesmoke;
+    border-bottom: 3px solid whitesmoke; /* Already shorthand */
+}
+
+h1 { /* Note: selectors should be in lowercase */
+    text-align: center;
+    color: whitesmoke;
+}
+
+.index-page {
+    width: 100%;
+    margin: 0 !important;
+    background: url('ArtFrauds.webp') center / cover no-repeat fixed; /* Combines background-image, background-position, background-size, background-repeat, background-attachment */
+    min-height: 100vh;
+}
+
+.signups_page {
+    width: 100%;
+    margin: 0 !important;
+    background: url('GALLERY+INTERIOR.png') center / cover no-repeat fixed; /* Combines background-image, background-position, background-size, background-repeat, background-attachment */
+    min-height: 100vh;
+}
+
+.myform {
+    margin: 10vh 0; /* Top and bottom margin of 10vh, left and right margin of 0 */
+}
+
+.flexparent {
+    display: flex;
+    flex-flow: row wrap; /* Combines flex-direction and flex-wrap */
+    justify-content: space-between;
+}
+
+.divflex {
+    width: 100px;
+    height: 100px;
+    margin: 10px; /* Already shorthand */
+}
+
+.red {
+    background: red; /* Background color shorthand */
+    z-index: 1;
+}
+
+.green {
+    background: green; /* Background color shorthand */
+    z-index: 2;
+}
+
+.blue {
+    background: blue; /* Background color shorthand */
+    z-index: 3;
+}
+
+.art_frauds {
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+    background: 100% / cover no-repeat; /* Background shorthand (but may not work as intended if meant for images) */
+    position: absolute;
+    width: 100%;
+}
+
+/* Shorthand for properties not previously used: border, padding, margin, font, background */
+
+.form-group {
+    font-weight: bold;
+    color: rgb(251, 249, 249);
+}
+
+.form-text-text-muted {
+    font-weight: bold;
+    color: rgb(252, 250, 250);
+}
+
+.form-check-label {
+    font-weight: bold;
+    color: rgb(252, 250, 250);
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .Art {
+        font-size: 3rem; /* Larger for mobile */
+    }
+    .divflex {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+/* Tablet (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Art {
+        font-size: 2.5rem; /* Medium size for tablets */
+    }
+    .divflex {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    .Art {
+        font-size: 2rem; /* Standard size for desktop */
+    }
+    .divflex {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+}
